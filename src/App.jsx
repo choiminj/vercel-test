@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 import logo from './logo.svg';
 
 function App() {
+  const navigate = useNavigate();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => navigate('/test')}></button>
       </header>
     </div>
   );
